@@ -1,0 +1,94 @@
+body {
+  font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+}
+.clearfix:after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:" ";
+  clear:both;
+  height:0;
+}
+header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+.wrap {
+  width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  line-height: 1;
+  margin: 0;
+}
+h1 a {
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  line-height: 60px;
+  color: #666;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+}
+nav a {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+  font-size: .85rem;
+  color: #657786;
+}
+nav a.selected {
+  border-bottom: 2px solid #1da1f2;
+  color: #1da1f2;
+}
+article {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+article .avatar,
+article .detail {
+  float: left;
+  line-height: 1;
+}
+article .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+article .detail {
+  padding-top: 5px;
+  margin: 0 0 0 15px;
+  width: 60%;
+}
+article .detail a {
+  color: #333;
+  text-decoration: none;
+}
+article .detail dt {
+  font-size: 16px;
+}
+article .author {
+  color: #666;
+}
+article .saying {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+article time {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  color: #999;
+  font-size: 14px;
+  color: #657786;
+}
