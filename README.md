@@ -1,6 +1,6 @@
 # ScalaNews
 
-[Scala News](http://news.scala.com) is a reading list helping you to be informed of the latest voice in Scala world.
+[Scala News](http://news.scala.com) is a reading timeline helping you to be informed of the latest voice in Scala world.
 
 ## Screenshot
 
