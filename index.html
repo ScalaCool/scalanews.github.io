@@ -3,6 +3,10 @@
 <head>
 <title>Scala News</title>
 <meta charset="utf8" />
+<!-- <meta content="target-densitydpi=device-dpi,width=720" name="viewport"> -->
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
 <link rel="stylesheet" href="public/normalize.css" />
 <link rel="stylesheet" href="public/style.css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
@@ -28,22 +32,22 @@
 </body>
 <script type="text/template" id="news-tpl">
   {@each results as news}
-	<article class="clearfix">
-	  <div class="avatar">
-	    <img src="${news.source.avatar}" />
-	  </div>
-	  <dl class="detail">
-	    <dt class="author">${news.source.name}</dt>
-	    <dd class="saying">
-	        {@if news.link}
-	      <a href="${news.link}" target="_blank">${news.title}</a>
-	        {@else}
+  <article class="clearfix">
+    <div class="avatar">
+      <img src="${news.source.avatar}" />
+    </div>
+    <dl class="detail">
+      <dt class="author">${news.source.name}</dt>
+      <dd class="saying">
+          {@if news.link}
+        <a href="${news.link}" target="_blank">${news.title}</a>
+          {@else}
           ${news.title}
-	        {@/if}
-	    </dd>
-	  </dl>
-	  <time>${news.gmt_create.substring(0,10)}</time>
-	</article>
+          {@/if}
+      </dd>
+    </dl>
+    <time>${news.gmt_create.substring(0,10)}</time>
+  </article>
   {@/each}
 </script>
 <script src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>

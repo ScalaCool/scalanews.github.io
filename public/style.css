@@ -1,4 +1,18 @@
-body {
+ 
+
+ /* pad */
+@media only screen
+ 
+and (max-device-width : 600px)
+{
+/*// CSS Styles*/
+  
+ 
+} 
+ 
+
+ body {
+   
   font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
 }
 .clearfix:after {
@@ -13,10 +27,7 @@ header {
   width: 100%;
   border-bottom: 1px solid #eee;
 }
-.wrap {
-  width: 600px;
-  margin: 0 auto;
-}
+
 h1 {
   line-height: 1;
   margin: 0;
@@ -55,6 +66,8 @@ article {
   border-bottom: 1px solid #eee;
   position: relative;
 }
+
+
 article .avatar,
 article .detail {
   float: left;
@@ -93,6 +106,18 @@ article time {
   font-size: 14px;
   color: #657786;
 }
+
+/* 非手机端隐藏右上角 */
+@media only screen
+and (min-device-width : 600px)
+ { 
+ .wrap {
+ 
+  width: 600px;
+  margin: 0 auto;
+}
+  
+/*// CSS Styles*/
 .ribbon {
   /* The right and left classes determine the side we attach our banner to */
   position: absolute;
@@ -213,4 +238,5 @@ article time {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
+ }
+} 
