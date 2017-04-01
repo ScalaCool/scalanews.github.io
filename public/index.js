@@ -4,19 +4,21 @@ $(document).ready(function () {
     if (r.results) {
       console.log('123')
       $('#content .wrap').html(juicer($('#news-tpl').html(), r))
-      addBottomLine()
+      addDividingLine()
     }
   })
 })
 
-function addBottomLine(){
-  var times = document.getElementsByTagName("time")
-  var clearfixs = document.getElementsByClassName("clearfix")
-  var weekFlag = -1
-  for (var i = 0; i <= clearfixs.length; i++) {
-    let nowWeekNum = moment(times[i].innerHTML,'YYYY-MM-DD').isoWeeks()
+function addDividingLine(){
+  let times = document.getElementsByTagName("time")
+  let clearfixs = document.getElementsByClassName("clearfix")
+  let weekFlag = -1
+  for (let i = 0; i <= clearfixs.length; i++) {
+    let nowWeekNum = moment(times[i].innerHTML, 'YYYY-MM-DD').isoWeeks()
     if (weekFlag != nowWeekNum) {
-      clearfixs[i].style.borderBottom="2px dotted #ff0000"
+      if (weekFlag != -1){
+        clearfixs[i].style.borderTop = "2px solid #1da1f2"
+      } 
       weekFlag = nowWeekNum
     }
   }
