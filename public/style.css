@@ -13,15 +13,9 @@ header {
   width: 100%;
   border-bottom: 1px solid #eee;
 }
-@media (min-width:601px) {
+@media (min-width:600px) {
   .wrap {
     width: 600px;
-    margin: 0 auto;
-  }
-}
-@media (min-width:480px){
-  .wrap {
-    width: 480px;
     margin: 0 auto;
   }
 }
@@ -72,10 +66,7 @@ article {
 @media (max-width:600px) {
   article {
     padding: 20px 10px;
-    /* 控制单行显示并超出部分省略号 */
-    /*overflow: hidden;*/
-    /*white-space: nowrap;/* 遇到<br>为止 */ */
-    /*text-overflow: ellipsis;*/
+    overflow: hidden;
   }
 }
 article .avatar,
