@@ -1,28 +1,33 @@
 body {
   font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
 }
+
 .clearfix:after {
-  visibility:hidden;
-  display:block;
-  font-size:0;
-  content:" ";
-  clear:both;
-  height:0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
+
 header {
   width: 100%;
   border-bottom: 1px solid #eee;
 }
+
 @media (min-width:600px) {
   .wrap {
     width: 600px;
     margin: 0 auto;
   }
 }
+
 h1 {
   line-height: 1;
   margin: 0;
 }
+
 h1 a {
   font-size: 20px;
   font-weight: 400;
@@ -34,15 +39,18 @@ h1 a {
   color: #333;
   cursor: pointer;
 }
+
 @media (max-width:768px) {
   h1 {
-    align:center;
+    align: center;
     text-align: center;
   }
 }
+
 nav {
   display: flex;
 }
+
 nav a {
   display: inline-block;
   flex: 1;
@@ -54,51 +62,61 @@ nav a {
   color: #657786;
   text-decoration: none;
 }
+
 nav a.selected {
   border-bottom: 2px solid #1da1f2;
   color: #1da1f2;
 }
+
 article {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   position: relative;
 }
+
 @media (max-width:600px) {
   article {
     padding: 20px 10px;
     overflow: hidden;
   }
 }
-article .avatar,
-article .detail {
+
+article .avatar, article .detail {
   float: left;
   line-height: 1;
 }
+
 article .avatar img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 article .detail {
   padding-top: 5px;
   margin: 0 0 0 15px;
   width: 60%;
 }
+
 article .detail a {
   color: #333;
   text-decoration: none;
 }
+
 article .detail dt {
   font-size: 16px;
 }
+
 article .author {
   color: #666;
 }
+
 article .saying {
   margin: 5px 0 0 0;
   font-size: 16px;
   line-height: 1.5;
 }
+
 article time {
   position: absolute;
   right: 20px;
@@ -107,12 +125,11 @@ article time {
   font-size: 14px;
   color: #657786;
 }
-/* Large desktop */
-@media (min-width: 1200px) { }
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { }
+
+
 /* Big screen */
-@media (min-width:768px){
+
+@media (min-width:768px) {
   .ribbon {
     /* The right and left classes determine the side we attach our banner to */
     position: absolute;
@@ -136,9 +153,7 @@ article time {
     z-index: 9999;
     pointer-events: auto;
   }
-  
-  .ribbon a,
-  .ribbon a:hover {
+  .ribbon a, .ribbon a:hover {
     /* Set the text properties */
     color: #fff;
     font-size: 16px;
@@ -158,7 +173,6 @@ article time {
     border-color: #fff;
     border-color: rgba(255, 255, 255, 0.7);
   }
-  
   .ribbon-wrapper {
     width: 150px;
     height: 150px;
@@ -168,33 +182,27 @@ article time {
     z-index: 9999;
     pointer-events: none;
   }
-  
   .ribbon-wrapper.fixed {
     position: fixed;
   }
-  
   .ribbon-wrapper.left {
     left: 0;
   }
-  
   .ribbon-wrapper.right {
     right: 0;
   }
-  
   .ribbon-wrapper.left-bottom {
     position: fixed;
     top: inherit;
     bottom: 0;
     left: 0;
   }
-  
   .ribbon-wrapper.right-bottom {
     position: fixed;
     top: inherit;
     bottom: 0;
     right: 0;
   }
-  
   .ribbon-wrapper.right .ribbon {
     top: 42px;
     right: -43px;
@@ -204,7 +212,6 @@ article time {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
   .ribbon-wrapper.left .ribbon {
     top: 42px;
     left: -43px;
@@ -214,7 +221,6 @@ article time {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  
   .ribbon-wrapper.left-bottom .ribbon {
     top: 80px;
     left: -43px;
@@ -224,7 +230,6 @@ article time {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
   .ribbon-wrapper.right-bottom .ribbon {
     top: 80px;
     right: -43px;
@@ -235,9 +240,3 @@ article time {
     transform: rotate(-45deg);
   }
 }
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {  }
-
-/* Landscape phones and down */
-@media (max-width: 480px) {   }
